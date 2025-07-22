@@ -29,6 +29,10 @@ dependencies {
 	testImplementation 'io.mockk:mockk:1.13.4'
 	testImplementation("org.mockito.kotlin:mockito-kotlin:4.1.0")
 	testImplementation 'com.jayway.jsonpath:json-path'
+	testImplementation("org.junit.jupiter:junit-jupiter-api")
+	testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+	testImplementation("org.hibernate.validator:hibernate-validator")
+	testImplementation("org.glassfish:jakarta.el:4.0.2")
 }
 
 tasks.withType(KotlinCompile).configureEach {
